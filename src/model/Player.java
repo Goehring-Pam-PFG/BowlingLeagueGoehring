@@ -40,16 +40,13 @@ public class Player {
 	}
 
 
-	public Player(int playerId, String firstName, String lastName, String phoneNumber, String screenName) {
-		super();
-		this.playerId = playerId;
-		this.firstName = firstName;
-		this.lastName = lastName;
-		this.phoneNumber = phoneNumber;
-		this.screenName = screenName;
-//		this.teamId = teamId;
+	public Player(String firstName, String lastName, String phoneNumber, String screenName, Team team) {
+		this.setFirstName(firstName);
+		this.setLastName(lastName);
+		this.setPhoneNumber(phoneNumber);
+		this.setScreenName(screenName);
+		this.setTeam(team);
 	}
-
 
 	public int getPlayerId() {
 		return playerId;
@@ -100,21 +97,17 @@ public class Player {
 		this.screenName = screenName;
 	}
 
-
+	public Team getTeam() {
+		return team;
+	}
 	
-
-
+	public void setTeam(Team team) {
+		this.team = team;
+	}
+	
 	@Override
 	public String toString() {
 		return "Player [playerId=" + playerId + ", firstName=" + firstName + ", lastName=" + lastName + ", phoneNumber="
 				+ phoneNumber + ", screenName=" + screenName +  "]";
 	}
-
-
-//	public void setTeamId(int teamId) {
-//		this.teamId = teamId;
-//	}
-	
-	
-	
 }
