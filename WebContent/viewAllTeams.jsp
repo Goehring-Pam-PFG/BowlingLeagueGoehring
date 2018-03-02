@@ -16,6 +16,7 @@ table, td, th {
 </style>
 </head>
 <body>
+<h2>Team List</h2>
 	<form method = "post" action = "editTeamServlet">
 		<table>
 			<tr>

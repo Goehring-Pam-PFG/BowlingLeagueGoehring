@@ -34,7 +34,7 @@ public class viewAllPlayersServlet extends HttpServlet {
 		if (ph.showAllPlayers().isEmpty()) {
 			getServletContext().getRequestDispatcher("/addPlayer.html").forward(request, response);
 		}
-		getServletContext().getRequestDispatcher("/viewPlayers.jsp").forward(request, response);
+		getServletContext().getRequestDispatcher("/viewAllPlayers.jsp").forward(request, response);
 	}
 
 	/**
